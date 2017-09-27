@@ -82,13 +82,13 @@ public class CardsArray {
                     addCardsToArray(c);
                 }
                 break;
-            case "spade" : 
+            case "spades" : 
                 if(spadesCount<DECK_SIZE){
                     spades[spadesCount]=c;
                     spadesCount+=1;
                 }
                 else{
-                    removeCardsFromArray(0,"spade");
+                    removeCardsFromArray(0,"spades");
                     addCardsToArray(c);
                 }
                 break;
@@ -137,8 +137,9 @@ public class CardsArray {
    private String getCards(Card[] cards){
        String cardNumbers="";
        for(Card c:cards){
-//           cardNumbers+=c.getNumber()+"  ";
+           if(c!=null)
+           cardNumbers+=c.getNumber()+"  ";
        }
-       return cardNumbers;
+       return cardNumbers.trim();
    }
 }

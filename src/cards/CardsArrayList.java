@@ -55,7 +55,7 @@ public class CardsArrayList {
            case "hearts" : 
                addFlag=hearts.add(c);
                break;
-           case "spade" : 
+           case "spades" : 
                addFlag=spades.add(c);
                break;
            default :
@@ -77,7 +77,7 @@ public class CardsArrayList {
 
    @Override
    public String toString(){
-       return "\nHearts ArrayList:[ "+this.getCards(hearts)+" ]"
+       return "Hearts ArrayList:[ "+this.getCards(hearts)+" ]"
                 + "\nDiamonds ArrayList:[ "+this.getCards(diamonds)+" ]"
                 + "\nSpades ArrayList:[ "+this.getCards(spades)+" ]"
                 + "\nClubs ArrayList:[ "+this.getCards(clubs)+" ]";
