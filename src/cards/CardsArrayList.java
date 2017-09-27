@@ -50,13 +50,13 @@ public class CardsArrayList {
                addFlag=clubs.add(c);
                break;
            case "diamonds" : 
-               addFlag=clubs.add(c);
+               addFlag=diamonds.add(c);
                break;
            case "hearts" : 
-               addFlag=clubs.add(c);
+               addFlag=hearts.add(c);
                break;
            case "spade" : 
-               addFlag=clubs.add(c);
+               addFlag=spades.add(c);
                break;
            default :
                addFlag=false;

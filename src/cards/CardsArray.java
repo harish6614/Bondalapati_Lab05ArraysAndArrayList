@@ -72,7 +72,7 @@ public class CardsArray {
                     addCardsToArray(c);
                 }
                 break;
-            case "hearts" : 
+            case "hearts" :
                 if(heartsCount<DECK_SIZE){
                     hearts[heartsCount]=c;
                     heartsCount+=1;
@@ -115,7 +115,7 @@ public class CardsArray {
     
     private int removeCardFromSuit(Card[] cards,int position,int count){
         if(position>=0 && position<count){
-            for(int i=position-1;i<count-1;i++){
+            for(int i=position;i<count-1;i++){
                 cards[i]=cards[i+1];
             }
             cards[count-1]=null;
@@ -137,7 +137,7 @@ public class CardsArray {
    private String getCards(Card[] cards){
        String cardNumbers="";
        for(Card c:cards){
-           cardNumbers+=c.getNumber()+"  ";
+//           cardNumbers+=c.getNumber()+"  ";
        }
        return cardNumbers;
    }
