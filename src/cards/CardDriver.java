@@ -11,15 +11,19 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
- *
+ * CardDriver class to invoke and test various methods of Card, CardsArray and
+ * CardsArrayList classes.
+ * 
  * @author Instructor
+ * @author Harish Bondalapati
  */
 public class CardDriver {
 
     /**
      * @param args the command line arguments
-     * @throws java.io.FileNotFoundException
-     */
+     * @throws java.io.FileNotFoundException Throws an exception if 
+     * specified file is not found in the location. 
+    */
     public static void main(String[] args) throws FileNotFoundException {
         // TODO code application logic here
         Scanner sc = new Scanner(new File("inputFile.txt"));
